@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      <img src="http://www.frankenraster.de/fr/wp-content/uploads/2015/01/Logo_Frankenraster_2015.png" alt="">
+      <img id="logo" src="http://www.frankenraster.de/fr/wp-content/uploads/2015/01/Logo_Frankenraster_2015.png" alt="">
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -11,10 +11,13 @@
       <ion-col>
         <ion-list inset>
           <ion-item>
-            <ion-input placeholder="Email" name="username" id="loginField" type="text" required [(ngModel)]="username" #email></ion-input>
+            <ion-input placeholder="Firma" name="username" id="loginField" type="text" required [(ngModel)]="firma"></ion-input>
           </ion-item>
           <ion-item>
-            <ion-input placeholder="Password" name="password" id="passwordField" type="password" required [(ngModel)]="password"></ion-input>
+            <ion-input placeholder="Benutzername" name="username" id="loginField" type="test" required [(ngModel)]="Benutzername"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input placeholder="Passwort" name="password" id="passwordField" type="password" required [(ngModel)]="password"></ion-input>
           </ion-item>
         </ion-list>
       </ion-col>
