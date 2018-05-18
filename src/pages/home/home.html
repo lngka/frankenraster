@@ -1,17 +1,25 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title >Sie sind eingeloggt!</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
+  <h3 align = "center" class = "header">Willkommen bei Frankenraster!</h3>
+  <hr>
+  <p id = "bold">
+    Mit Hilfe unserer Suchmaschine können Sie bequem unseren Lagerbestand
+    nach Ihrem gewünschten Artikel durchsuchen. <br/>
+
+    Sie können nach mehreren Schlagworten suchen. Wenn ein bestimmter Begriff nicht
+    gesucht werden soll können sie ein - davor setzen z.B.: -Gehaltsabrechnung
   </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<hr>
+  <ion-item>
+    <ion-input placeholder="Suchbegriffe..." name="keywords" type="keywords"></ion-input>
+  </ion-item>
+  <ion-item>
+    <button ion-button class = "submit-button" full type = "submit">Suchen</button>
+  </ion-item>
+<hr/>
 </ion-content>
