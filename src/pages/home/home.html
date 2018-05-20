@@ -5,19 +5,34 @@
 </ion-header>
 
 <ion-content padding>
+  <div id = "border">
+    <p align = "center" class = "blue">
+      <b>Firma: </b><br/>
+      <b>Login: </b>
+    </p>
+  </div><br/>
+  <div id = "borderred">
+    <p align = "center" class = "red">
+      Automatischer Logout nach 20 Minuten Inaktivität.
+    </p>
+  </div>
   <h3 align = "center" class = "header">Willkommen bei Frankenraster!</h3>
   <p id = "bold">
     <br/>
+    Dank unserer neuen Version für mobile Geräte, können Sie nun bequem von
+    ihrem Tablet aus unseren WebDienst benutzen.<br/><br/>
+
     Mit Hilfe unserer Suchmaschine können Sie bequem unseren Lagerbestand
     nach Ihrem gewünschten Artikel durchsuchen. <br/><br/>
 
-    Falls Sie Hilfe bei der Suche benötigen, klicken Sie auf das "Hilfe" Feld unten rechts
+    Falls Sie Hilfe bei der Suche benötigen, klicken Sie auf das <b>"Hilfe"</b> Feld unten rechts, dort
+    können sie sich auch <b>ausloggen</b>.
   </p>
   <br/>
   <ion-item>
     <ion-input placeholder="Suchbegriffe..." name="keywords" type="keywords"></ion-input>
   </ion-item>
   <ion-item>
-    <button ion-button class = "submit-button" full type = "submit">Suchen</button>
+    <button ion-button class = "submit-button" full type = "submit">Suche</button>
   </ion-item>
 </ion-content>

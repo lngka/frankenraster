@@ -12,7 +12,18 @@ page-home {
 #bold {
   font-size: 110%;
 }
-ion-content {
-  background-color: ivory;
+#border {
+  border-style: groove;
+  border-color: dodgerblue;
+}
+#borderred {
+  border-style: groove;
+  border-color: red;
+}
+.blue {
+  color: dodgerblue;
+}
+.red {
+  color: red;
 }
 }
