@@ -1,10 +1,13 @@
 page-home {
 
 .header {
-  color: chartreuse;
+  color: dodgerblue;
 }
-ion-navbar {
-  color: chartreuse;
+.toolbar-background {
+  background-color: dodgerblue;
+}
+.toolbar-title {
+  color: white;
 }
 #bold {
   font-size: 110%;

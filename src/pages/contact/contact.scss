@@ -1,10 +1,20 @@
 page-contact {
 
-.bold {
-  font-size: 180%;
+#bold {
+  font-size: 110%;
 }
 .middle {
-  font-size: 190%;
+  font-size: 160%;
+  color: dodgerblue;
 }
-
+.toolbar-background {
+  background-color: dodgerblue;
+}
+.toolbar-title {
+  color: white;
+}
+ion-content {
+ padding-left: 20px;
+ padding-right: 20px;
+}
 }
