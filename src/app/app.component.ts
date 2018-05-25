@@ -6,13 +6,17 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { LoginPage } from '../pages/login/login';
+import { SearcherrorPage } from '../pages/searcherror/searcherror';
+import { SearchresultPage } from '../pages/searchresult/searchresult';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  // rootPage: any = TabsPage;
-  rootPage: any = LoginPage;
+  rootPage: any = TabsPage;
+  // rootPage: any = LoginPage;
+  // rootPage: any = SearcherrorPage;
+  // rootPage: any = SearchresultPage;
 
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
