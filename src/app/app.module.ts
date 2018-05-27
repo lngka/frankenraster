@@ -12,7 +12,9 @@ import { SearcherrorPage } from '../pages/searcherror/searcherror';
 import { SearchresultPage } from '../pages/searchresult/searchresult';
 
 import { StatusBar } from '@ionic-native/status-bar';
+import { ComponentsModule } from '../components/components.module';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { FlashProvider } from '../providers/flash/flash';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    ComponentsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -43,7 +46,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    FlashProvider
   ]
 })
 export class AppModule {}

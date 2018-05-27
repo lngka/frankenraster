@@ -1,34 +1,33 @@
 page-home {
-
-.header {
-  color: yellowgreen;
-}
-.toolbar-background {
-  background-color: yellowgreen;
-}
-.toolbar-title {
-  color: white;
-}
-#bold {
-  font-size: 110%;
-}
-#border {
-  border-style: groove;
-  border-color: dodgerblue;
-}
-#borderred {
-  border-style: groove;
-  border-color: red;
-}
-.blue {
-  color: dodgerblue;
-}
-.red {
-  color: red;
-}
-.yellowgreen {
-  button {
-    background-color: yellowgreen;
+  .header {
+    // color: yellowgreen;
   }
-}
+  .toolbar-background {
+    // background-color: yellowgreen;
+  }
+  .toolbar-title {
+    color: white;
+  }
+  #bold {
+    font-size: 110%;
+  }
+  #border {
+    border-style: groove;
+    border-color: dodgerblue;
+  }
+  #borderred {
+    border-style: groove;
+    border-color: red;
+  }
+  .blue {
+    color: dodgerblue;
+  }
+  .red {
+    color: red;
+  }
+  .yellowgreen {
+    button {
+      background-color: yellowgreen;
+    }
+  }
 }
