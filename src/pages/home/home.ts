@@ -10,6 +10,6 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, private flashProvider: FlashProvider) {
     // function declared in src/components/flash/flash.ts
-    this.flashProvider.show('Automatischer Logout nach 20 Minuten Inaktivität', 1500);
+    this.flashProvider.show('Automatischer Logout nach 20 Minuten Inaktivität', 3000);
   }
 }
