@@ -13,8 +13,8 @@ import { SearchresultPage } from '../pages/searchresult/searchresult';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage: any = TabsPage;
-  // rootPage: any = LoginPage;
+  // rootPage: any = TabsPage;
+  rootPage: any = LoginPage;
   // rootPage: any = SearcherrorPage;
   // rootPage: any = SearchresultPage;
 

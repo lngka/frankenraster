@@ -6,15 +6,15 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding>
-  <form #loginForm="ngForm" (ngSubmit)="login()" autocomplete="off">
+  <form (ngSubmit)="logMeIn()" autocomplete="off">
     <ion-row>
       <ion-col>
         <ion-list inset>
           <ion-item>
-            <ion-input placeholder="Firma" name="username" id="loginField" type="text" required [(ngModel)]="firma"></ion-input>
+            <ion-input placeholder="Firma" name="company" id="companyField" type="text" required [(ngModel)]="company"></ion-input>
           </ion-item>
           <ion-item>
-            <ion-input placeholder="Benutzername" name="username" id="loginField" type="test" required [(ngModel)]="Benutzername"></ion-input>
+            <ion-input placeholder="Benutzername" name="login" id="loginField" type="text" required [(ngModel)]="login"></ion-input>
           </ion-item>
           <ion-item>
             <ion-input placeholder="Passwort" name="password" id="passwordField" type="password" required [(ngModel)]="password"></ion-input>
@@ -27,7 +27,7 @@
         <div *ngIf="error" class="alert alert-danger">{{error}}</div>
         <!-- <button ion-button class="submit-btn" full type="submit" [disabled]="!loginForm.form.valid">Login</button> -->
         <div class = "yellowgreen">
-        <button ion-button class="submit-btn" full type="submit" >Login</button>
+        <button [disabled]="formDisabled" ion-button class="submit-btn" full type="submit" >Login</button>
         </div>
       </ion-col>
     </ion-row>
