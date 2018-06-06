@@ -1,15 +1,12 @@
 page-login {
 
-#logo {
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 0px;
-  padding-left: 20px;
-  margin-bottom: 1vh;
+toolbar-content {
+  height: 100px;
 }
-
 ion-navbar {
-  border-bottom: outset 0.5vh;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  height: 80px;
 }
 .yellowgreen {
   button {
