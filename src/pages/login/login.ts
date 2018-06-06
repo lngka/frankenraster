@@ -43,18 +43,22 @@ export class LoginPage {
       .subscribe(
         // login succeed
         (res) => {
-
-          // save loginData but not the password to use later
+          // save loginData except password, later use
           delete loginData.password;
           this.storage.set("loginData", JSON.stringify(loginData));
 
-          console.log(res);
-          this.navCtrl.push(TabsPage);
+          if (res["LoginID"] !== undefined) {
+            this.navCtrl.push(TabsPage);
+          } else {
+            this.formDisabled = false;
+            this.flash.show("Invalid Response from Server", 3000);
+          }
+
         },
         // login failed
         (err: HttpErrorResponse) => {
           this.formDisabled = false;
-          console.log(err);
+          console.error(err);
           this.flash.show(err.error, 3000);
     })
   }

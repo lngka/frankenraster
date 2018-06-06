@@ -6,7 +6,7 @@ import { IonicStorageModule } from '@ionic/storage';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
+import { HelpPage } from '../pages/help/help';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
@@ -22,7 +22,7 @@ import { FlashProvider } from '../providers/flash/flash';
   declarations: [
     MyApp,
     AboutPage,
-    ContactPage,
+    HelpPage,
     HomePage,
     TabsPage,
     LoginPage,
@@ -40,7 +40,7 @@ import { FlashProvider } from '../providers/flash/flash';
   entryComponents: [
     MyApp,
     AboutPage,
-    ContactPage,
+    HelpPage,
     HomePage,
     TabsPage,
     LoginPage,
