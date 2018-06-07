@@ -56,7 +56,7 @@ export class LoginPage {
 
         },
         // login failed
-        (err: HttpErrorResponse) => {
+        (err: any) => {
           this.formDisabled = false;
           console.error(err);
           this.flash.show(err.error, 3000);
