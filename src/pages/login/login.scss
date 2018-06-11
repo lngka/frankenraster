@@ -1,17 +1,45 @@
 page-login {
 
-toolbar-content {
-  height: 100px;
+/*global*/
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
 }
-ion-navbar {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  height: 80px;
+
+/*header*/
+
+ion-header {
+  border-bottom: 2px solid yellowgreen;
 }
+
+/*body*/
+
+ion-content {
+  font-family: sans-serif;
+  border-top: 2px solid yellowgreen;
+  border-left: 2px solid yellowgreen;
+  border-right: 2px solid yellowgreen;
+}
+
+/*button*/
+
 .yellowgreen {
   button {
     background-color: yellowgreen;
   }
+}
+
+/*footer*/
+
+ion-footer {
+  background-color: yellowgreen;
+}
+
+ion-footer p {
+  text-align: center;
+  color: #ffffff;
 }
 
 }

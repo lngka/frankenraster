@@ -1,4 +1,25 @@
-page-contact {
+page-help {
+
+/*global*/
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/*header*/
+
+.toolbar-background {
+  background-color: yellowgreen;
+}
+
+/*content*/
+
+ion-content {
+  border-left: 2px solid yellowgreen;
+  border-right: 2px solid yellowgreen;
+}
 
 #bold {
   font-size: 110%;
@@ -7,9 +28,16 @@ page-contact {
   font-size: 160%;
   color: yellowgreen;
 }
+
+/*phone-box*/
+
 #border {
+  font-style: bold;
+  background-color: #FFFFF0;
   border-style: groove;
   border-color: yellowgreen;
 }
+
+
 
 }

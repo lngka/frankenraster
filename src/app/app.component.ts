@@ -14,7 +14,7 @@ import { SearchresultPage } from '../pages/searchresult/searchresult';
 })
 export class MyApp {
   // rootPage: any = TabsPage;
-  rootPage: any = LoginPage;
+  // rootPage: any = LoginPage;
   // rootPage: any = SearcherrorPage;
   // rootPage: any = SearchresultPage;
 

@@ -1,10 +1,16 @@
+<!--header design-->
+
 <ion-header>
   <ion-navbar padding>
-    <ion-title>
+    <div class = "container">
       <img id="logo" src="http://www.frankenraster.de/fr/wp-content/uploads/2015/01/Logo_Frankenraster_2015.png" alt="">
-    </ion-title>
+    </div>
   </ion-navbar>
 </ion-header>
+
+<!--content-->
+<!--input values-->
+
 <ion-content padding>
   <form (ngSubmit)="logMeIn()" autocomplete="off">
     <ion-row>
@@ -22,6 +28,9 @@
         </ion-list>
       </ion-col>
     </ion-row>
+
+<!--button-->
+
     <ion-row>
       <ion-col>
         <div *ngIf="error" class="alert alert-danger">{{error}}</div>
@@ -33,3 +42,11 @@
     </ion-row>
   </form>
 </ion-content>
+
+<!--footer-->
+
+<ion-footer>
+  <div class = "container">
+    <p>FRANKENRASTER GmbH &copy; 2018</p>
+  </div>
+</ion-footer>

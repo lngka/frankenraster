@@ -1,20 +1,26 @@
+<!--header-->
+
 <ion-header>
   <ion-navbar padding>
-        <img id="logo" width = "150" length = "43.5" src="http://www.frankenraster.de/fr/wp-content/uploads/2015/01/Logo_Frankenraster_2015.png" alt="">
+    <img id="logo" width = "150" length = "43.5" src="http://www.frankenraster.de/fr/wp-content/uploads/2015/01/Logo_Frankenraster_2015.png" alt="">
   </ion-navbar>
 </ion-header>
 
+<!--content-->
+<!--user-information-->
+
 <ion-content padding>
-  <ion-list>
-    <ion-item>
-      <button ion-button icon-end class="logout-button" full large color="danger" (click)="logMeOut()">Ausloggen<ion-icon name = "log-out"></ion-icon></button>
-    </ion-item>
+<div class = "container">
+<button ion-button icon-end class="logout-button" full large color="danger" (click)="logMeOut()">Ausloggen<ion-icon name = "log-out"></ion-icon></button>
 <hr>
-<div id = "border">
-    <p align = "center" class = "middle">Ihre Frankenraster Hotline:<br/>
-    09099 / 966 44 - 77</p>
-</div>
+  <div id = "border">
+    <p align = "center" class = "middle"><em>Frankenraster Hotline<br/>
+    09099 / 966 44 - 77</em></p>
+  </div>
 <hr>
+
+<!--user help-->
+
 <p id = "bold">
   Sie können mehrere Suchbegriffe eingeben, es werden alle Ergebnisse angezeigt,
   in denen alle Begriffe vorkommen (automatische UND-Verknüpfung), wobei die
@@ -29,6 +35,5 @@
   Alle Änderungen der Benutzerdaten melden Sie bitte Herrn <b>Max Mustermann</b>
 </p>
 <hr>
-
-  </ion-list>
+</div>
 </ion-content>

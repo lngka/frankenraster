@@ -1,3 +1,5 @@
+<!--header-->
+
 <ion-header>
   <ion-navbar padding>
     <!-- <ion-title align="center">Sie sind eingeloggt!</ion-title> -->
@@ -5,14 +7,18 @@
   </ion-navbar>
 </ion-header>
 
+<!--content-->
+<!--info-paragraph-->
+
 <ion-content padding>
+  <div class = "container">
   <!-- <div id="borderred">
     <p align="center" class="red">
       Automatischer Logout nach 20 Minuten Inaktivität.
     </p>
   </div> -->
   <h3 align="center" class="header">Willkommen bei Frankenraster!</h3>
-  <p id="bold">
+  <p class ="bold">
     <br/>
     Dank unserer neuen Version für mobile Geräte, können Sie nun bequem von
     ihrem Tablet aus unseren WebDienst benutzen.<br/><br/>
@@ -24,12 +30,14 @@
     können sie sich auch <b>ausloggen</b>.
   </p>
   <br/>
+
+<!--search function-->
+
   <ion-item>
     <ion-input placeholder="Suchbegriffe..." name="keywords" type="keywords"></ion-input>
   </ion-item>
-  <ion-item>
     <div class="yellowgreen">
-    <button ion-button class="submit-button" full type="submit">Suche</button>
+    <button ion-button>Suchen</button>
     </div>
-  </ion-item>
+</div>
 </ion-content>
