@@ -4,6 +4,8 @@ page-about {
 
 .container {
   width: 80%;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin: auto;
   overflow: hidden;
 }
@@ -21,12 +23,36 @@ ion-content {
   border-right: 2px solid yellowgreen;
 }
 
+/*section*/
+
+section {
+  padding-bottom: 20px;
+}
+
+/*status*/
+
+#statustrue {
+  color: yellowgreen;
+}
+
+#statusfalse {
+  color: red;
+}
+
 /*shopping results*/
 
   #result {
     border-style: groove;
     border-color: yellowgreen;
   }
+
+/*img*/
+
+section img {
+  height: 50px;
+  width: 50px;
+  border: 2px solid yellowgreen;
+}
 
 /*button*/
 

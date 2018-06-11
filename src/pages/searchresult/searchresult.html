@@ -1,25 +1,43 @@
+<!--header-->
+
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>Suchergebnisse</ion-title>
+  <ion-navbar padding>
+    <!-- <ion-title align="center">Sie sind eingeloggt!</ion-title> -->
+    <img id="logo" width = "150" length = "43.5" src="http://www.frankenraster.de/fr/wp-content/uploads/2015/01/Logo_Frankenraster_2015.png" alt="">
   </ion-navbar>
-
 </ion-header>
 
+<!--content-->
 
 <ion-content padding>
-  <div id = "yellowgreen">
-  <button ion-button icon-end class = "submit button" full small type = "sumbit">Zum Warenkorb hinzufügen<ion-icon name = "add"></ion-icon></button>
-  </div>
-  <hr/>
-  <div id = "result">
-    <h4><b>Suchergebnis 1</b></h4>
-    <img src = "image.jpg" align = "right"><br/>
-    <input type = "checkbox" name = "delivery" value = "Scannen">Scannen<br/>
-    <input type = "checkbox" name = "delivery" value = "Express Scannen">Express Scannen<br/>
-    <input type = "checkbox" name = "delivery" value = "Versand">Versand<br/>
-    <input type = "checkbox" name = "delivery" value = "Express Versand">Express Versand<br/>
 
+  <div class = "container">
+    <h3>Suchergebnisse</h3>
   </div>
-  <hr/>
+
+
+<!--search result-->
+<section>
+  <div id = "result">
+    <div class = "container">
+    <h4><b>Suchergebnis 1</b></h4>
+    <div id = "statustrue">
+      eingelagert
+    </div>
+    <img src = "image.jpg" align = "right"><br/>
+    <input class = "box" type = "checkbox" name = "delivery" value = "Scannen">Scannen<br/>
+    <input class = "box" type = "checkbox" name = "delivery" value = "Express Scannen">Express Scannen<br/>
+    <input class = "box" type = "checkbox" name = "delivery" value = "Versand">Versand<br/>
+    <input class = "box" type = "checkbox" name = "delivery" value = "Express Versand">Express Versand<br/>
+    </div>
+  </div>
+</section>
+
+
+<!--add shopping cart-->
+
+  <div class = "yellowgreen">
+  <button ion-button icon-end class = "submit button" type = "sumbit">Zum Warenkorb hinzufügen<ion-icon name = "add"></ion-icon></button>
+  </div>
+
 </ion-content>

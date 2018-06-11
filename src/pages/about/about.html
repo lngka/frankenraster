@@ -10,17 +10,21 @@
 <!--shopping cart-->
 
 <ion-content padding>
-  <hr/>
+  <section>
   <div id = "result">
+    <div class = "container">
     <h4><b>Suchergebnis 1</b></h4>
+    <div id = "statustrue">
+      eingelagert
+    </div>
     <img src = "image.jpg" align = "right"><br/>
-    <input type = "checkbox" name = "delivery" value = "Scannen">Scannen<br/>
-    <input type = "checkbox" name = "delivery" value = "Express Scannen">Express Scannen<br/>
-    <input type = "checkbox" name = "delivery" value = "Versand">Versand<br/>
-    <input type = "checkbox" name = "delivery" value = "Express Versand">Express Versand<br/>
-
+    <input class = "box" type = "checkbox" name = "delivery" value = "Scannen">Scannen<br/>
+    <input class = "box" type = "checkbox" name = "delivery" value = "Express Scannen">Express Scannen<br/>
+    <input class = "box" type = "checkbox" name = "delivery" value = "Versand">Versand<br/>
+    <input class = "box" type = "checkbox" name = "delivery" value = "Express Versand">Express Versand<br/>
+    </div>
   </div>
-  <hr/>
+</section>
 
 <!--order function-->
 
@@ -28,5 +32,7 @@
     <button ion-button icon-end class = "submit-button" full type = "submit" color = "secondary">
     verbindlich Bestellen<ion-icon name = "cart"></ion-icon></button>
     </div>
+
+<!--button up-->
 
 </ion-content>

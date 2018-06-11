@@ -1,23 +1,28 @@
+<!--header-->
+
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>Fehler!</ion-title>
+  <ion-navbar padding>
+    <!-- <ion-title align="center">Sie sind eingeloggt!</ion-title> -->
+    <img id="logo" width = "150" length = "43.5" src="http://www.frankenraster.de/fr/wp-content/uploads/2015/01/Logo_Frankenraster_2015.png" alt="">
   </ion-navbar>
-
 </ion-header>
 
+<!--content-->
 
 <ion-content padding>
+  <div class = "container">
+  <h3>Keine Treffer!</h3>
   <p id = "bold">
-  Leider ergab Ihre Suche keine Ergebnisse, überprüfen Sie gegebenfalls nochmals ihre <b>Suchbegriffe</b>
+  Leider ergab Ihre Suche keine Ergebnisse, überprüfen Sie nochmals ihre <b>Suchbegriffe</b>
   und führen Sie Ihre Suche erneut durch. Falls Sie Hilfe benötigen, klicken Sie auf das <b>"Hilfe"</b> Feld.
   </p>
-  <ion-item>
+
+<!--search-function-->
+
     <ion-input placeholder="Suchbegriffe..." name="keywords" type="keywords"></ion-input>
-  </ion-item>
-  <ion-item>
+
     <div class = "yellowgreen">
-    <button ion-button class = "submit-button" full type = "submit">Suche</button>
+    <button ion-button class = "submit-button" full type = "submit">Erneute Suche</button>
     </div>
-  </ion-item>
+</div>
 </ion-content>
