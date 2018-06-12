@@ -2,7 +2,10 @@
 
 <ion-header>
   <ion-navbar padding>
+    <div class = "container">
     <img id="logo" width = "150" length = "43.5" src="http://www.frankenraster.de/fr/wp-content/uploads/2015/01/Logo_Frankenraster_2015.png" alt="">
+    <button color = "danger">Logout</button>
+    </div>
   </ion-navbar>
 </ion-header>
 
@@ -11,13 +14,23 @@
 
 <ion-content padding>
 <div class = "container">
-<button ion-button icon-end class="logout-button" full large color="danger" (click)="logMeOut()">Ausloggen<ion-icon name = "log-out"></ion-icon></button>
-<hr>
-  <div id = "border">
+<!--<button ion-button icon-end class="logout-button" full large color="danger" (click)="logMeOut()">Ausloggen<ion-icon name = "log-out"></ion-icon></button>-->
+
+<section>
+  <div class = "border">
+    <p align = "center" id = "font-color">
+      Name: <br/>
+      Firma:
+    </p>
+  </div>
+</section>
+
+<!--hotline-->
+
+  <div class = "border">
     <p align = "center" class = "middle"><em>Frankenraster Hotline<br/>
     09099 / 966 44 - 77</em></p>
   </div>
-<hr>
 
 <!--user help-->
 

@@ -4,8 +4,6 @@ page-about {
 
 .container {
   width: 80%;
-  padding-top: 20px;
-  padding-bottom: 20px;
   margin: auto;
   overflow: hidden;
 }
@@ -16,11 +14,27 @@ page-about {
     background-color: yellowgreen;
   }
 
+  ion-header button {
+    float: right;
+    color: #ffffff;
+    background-color: red;
+    height: 43.5px;
+    border: 2px solid khaki;
+  }
+
 /*content*/
 
 ion-content {
   border-left: 2px solid yellowgreen;
   border-right: 2px solid yellowgreen;
+}
+
+section .container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /*section*/

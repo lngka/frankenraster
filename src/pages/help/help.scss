@@ -14,11 +14,23 @@ page-help {
   background-color: yellowgreen;
 }
 
+ion-header button {
+  float: right;
+  color: #ffffff;
+  background-color: red;
+  height: 43.5px;
+  border: 2px solid khaki;
+}
+
 /*content*/
 
 ion-content {
   border-left: 2px solid yellowgreen;
   border-right: 2px solid yellowgreen;
+}
+
+#font-color {
+  color: yellowgreen;
 }
 
 #bold {
@@ -29,13 +41,14 @@ ion-content {
   color: yellowgreen;
 }
 
-/*phone-box*/
+/*box*/
 
-#border {
+.border {
   font-style: bold;
   background-color: #FFFFF0;
   border-style: groove;
   border-color: yellowgreen;
+  margin-bottom: 10px;
 }
 
 

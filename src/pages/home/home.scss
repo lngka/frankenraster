@@ -13,6 +13,15 @@ page-home {
   .toolbar-background {
     background-color: yellowgreen;
   }
+
+  ion-header button {
+    float: right;
+    color: #ffffff;
+    background-color: red;
+    height: 43.5px;
+    border: 2px solid khaki;
+  }
+
 /*  .toolbar-title {
     color: white;
     }

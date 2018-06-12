@@ -2,6 +2,12 @@ page-searchresult {
 
 /*header*/
 
+  .container {
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+  }
+
   .toolbar-background {
     background-color: yellowgreen;
   }
@@ -10,7 +16,21 @@ page-searchresult {
     color: white;
   }
 
+  ion-header button {
+    float: right;
+    color: #ffffff;
+    background-color: red;
+    height: 43.5px;
+    border: 2px solid khaki;
+  }
+
 /*content*/
+
+  #header {
+    height: 50%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
 
   ion-content {
     border: 2px solid yellowgreen;
@@ -18,7 +38,7 @@ page-searchresult {
 
 /*searchresult*/
 
-  .container {
+  section .container {
     width: 80%;
     padding-top: 20px;
     padding-bottom: 20px;
