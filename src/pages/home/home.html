@@ -27,14 +27,12 @@
   </p>
   <form (ngSubmit)="search()" autocomplete="off">
     <ion-row>
-        <ion-list inset>
           <ion-item>
             <ion-input placeholder="z.B. Lieferanten" name="keyword" type="text" required [(ngModel)]="keyword"></ion-input>
           </ion-item>
-        </ion-list>
     </ion-row>
     <ion-row>
-        <button [disabled]="formDisabled" ion-button class="submit-btn" full type="submit" >Search</button>
+        <button [disabled]="formDisabled" ion-button class="submit-btn" full type="submit" color="yellowgreen">Search</button>
     </ion-row>
   </form>
 </ion-content>

@@ -14,33 +14,54 @@
 
   <div class="container">
     <div id="header">
-    <h3 align="center">Suchergebnisse</h3>
+    <h3 align="center">Suchergebnisse: {{ items.length }}</h3>
   </div>
   </div>
-
 
 <!--search result-->
-<section>
-  <div id="result">
-    <div class="container">
-    <h4><b>Suchergebnis 1</b></h4>
-    <div id="statustrue">
-      eingelagert
-    </div>
-    <img src="image.jpg" align="right"><br/>
-    <input class="box" type="checkbox" name="delivery" value="Scannen">Scannen<br/>
-    <input class="box" type="checkbox" name="delivery" value="Express Scannen">Express Scannen<br/>
-    <input class="box" type="checkbox" name="delivery" value="Versand">Versand<br/>
-    <input class="box" type="checkbox" name="delivery" value="Express Versand">Express Versand<br/>
-    </div>
-  </div>
-</section>
+  <ion-card width-100 *ngFor="let item of items" inset>
+    <ion-card-header text-wrap>
+      <strong>{{ item.Titel }}</strong>
+    </ion-card-header>
+
+    <ion-card-content>
+      <!-- detailed information -->
+      <p><strong>Status:</strong><ion-badge color="light">{{ statuses[item.StatusID].Status }}</ion-badge></p>
+      <p><strong>Barcode:</strong><ion-badge color="light">{{ item.Barcode }}</ion-badge></p>
+      <p><strong>DatumGeändert:</strong><ion-badge color="light">{{ item["DatumGeändert"] }}</ion-badge></p>
+
+      <!-- actions checkboxes -->
+      <ion-list radio-group>
+        <ion-item *ngIf='item["StatusID"] == 2'>
+          <ion-label>Scannen</ion-label>
+          <ion-radio (click)="checkboxClicked(item, 1)" value="1" ></ion-radio>
+        </ion-item>
+        <ion-item *ngIf='item["StatusID"] == 2'>
+          <ion-label>Scannen EXPRESS</ion-label>
+          <ion-radio (click)="checkboxClicked(item, 4)" value="4" ></ion-radio>
+        </ion-item>
+        <ion-item *ngIf='item["StatusID"] == 2'>
+          <ion-label>Versand</ion-label>
+          <ion-radio (click)="checkboxClicked(item, 2)" value="2"> </ion-radio>
+        </ion-item>
+        <ion-item *ngIf='item["StatusID"] == 2'>
+          <ion-label>Versand EXPRESS</ion-label>
+          <ion-radio (click)="checkboxClicked(item, 5)" value="5" ></ion-radio>
+        </ion-item>
+        <ion-item *ngIf='item["StatusID"] == 2' color="light">
+          <ion-label>Nichts</ion-label>
+          <ion-radio (click)="checkboxClicked(item, 0)" value="0" ></ion-radio>
+        </ion-item>
+    </ion-list>
+    </ion-card-content>
+  </ion-card>
 
 
 <!--add shopping cart-->
+<ion-fab right bottom>
+    <button (click)="orderButtonClicked()" ion-fab color="yellowgreen"><ion-icon name="arrow-dropright"></ion-icon></button>
+</ion-fab>
 
-  <div class="yellowgreen">
-  <button ion-button icon-end class="submit button" type="sumbit">Zum Warenkorb hinzufügen<ion-icon name="add"></ion-icon></button>
-  </div>
+<button (click)="orderButtonClicked()" ion-button color="yellowgreen" full>Verbindlich Bestellen</button>
 
 </ion-content>
