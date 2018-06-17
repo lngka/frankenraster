@@ -20,7 +20,6 @@ export class LoginPage {
 
   constructor(public navCtrl: NavController, private storage: Storage,
               private http: HttpClient, private flash: FlashProvider) {
-
     storage.get("loginData").then((data) => {
       if (data) {
         data = JSON.parse(data);

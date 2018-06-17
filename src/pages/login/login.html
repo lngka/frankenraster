@@ -1,8 +1,7 @@
 <!--header design-->
-
 <ion-header>
   <ion-navbar padding>
-    <div class = "container">
+    <div class="container">
       <img id="logo" src="http://www.frankenraster.de/fr/wp-content/uploads/2015/01/Logo_Frankenraster_2015.png" alt="">
     </div>
   </ion-navbar>
@@ -10,7 +9,6 @@
 
 <!--content-->
 <!--input values-->
-
 <ion-content padding>
   <form (ngSubmit)="logMeIn()" autocomplete="off">
     <ion-row>
@@ -35,7 +33,7 @@
       <ion-col>
         <div *ngIf="error" class="alert alert-danger">{{error}}</div>
         <!-- <button ion-button class="submit-btn" full type="submit" [disabled]="!loginForm.form.valid">Login</button> -->
-        <div class = "yellowgreen">
+        <div class="yellowgreen">
         <button [disabled]="formDisabled" ion-button class="submit-btn" full type="submit" >Login</button>
         </div>
       </ion-col>
@@ -46,7 +44,7 @@
 <!--footer-->
 
 <ion-footer>
-  <div class = "container">
+  <div class="container">
     <p>FRANKENRASTER GmbH &copy; 2018</p>
   </div>
 </ion-footer>
