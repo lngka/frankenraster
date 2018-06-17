@@ -29,8 +29,7 @@ export class HomePage {
 
   search() {
     if(this.loginID === undefined) {
-      this.loginID = 1; // <- Test only TODO: DELETE THIS
-      // return this.flash.show("search() Missing LoginID", 3000);
+      return this.flash.show("search() Missing LoginID", 3000);
     }
 
     var searchData = {

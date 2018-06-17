@@ -90,16 +90,13 @@ export class SearchresultPage {
   }
 
   orderButtonClicked() {
-
-
     this.storage.get("loginData")
       .then((d) => {
         var data = JSON.parse(d);
 
         // build request object q
         var q = {};
-        // q["loginID"] = data["LoginID"];
-        q["loginID"] = 1;// <- Test only TODO: DELETE THIS
+        q["loginID"] = data["LoginID"];
         q["orderArray"] = [];
         this.shoppingcart.forEach(cart_item => {
           q["orderArray"].push(
@@ -109,8 +106,18 @@ export class SearchresultPage {
             }
           );
         });
-
-        console.log(JSON.stringify(q));
+        
+        var myURL = "https://frdb-lngka.c9users.io/order"
+        this.http.post(myURL, q)
+          .subscribe(
+            (res) => {
+              this.flash.show(JSON.stringify(res), 3000);
+            },
+            (e) => {
+              console.error(e);
+              return this.flash.show(JSON.stringify(e), 3000);
+            }
+          )
       })
       .catch((e) => {
         console.error(e);
