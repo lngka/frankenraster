@@ -12,29 +12,21 @@
 <!--shopping cart-->
 
 <ion-content padding>
-  <section>
-  <div id = "result">
-    <div class = "container">
-    <h4><b>Suchergebnis 1</b></h4>
-    <div id = "statustrue">
-      eingelagert
-    </div>
-    <img src = "image.jpg" align = "right"><br/>
-    <input class = "box" type = "checkbox" name = "delivery" value = "Scannen">Scannen<br/>
-    <input class = "box" type = "checkbox" name = "delivery" value = "Express Scannen">Express Scannen<br/>
-    <input class = "box" type = "checkbox" name = "delivery" value = "Versand">Versand<br/>
-    <input class = "box" type = "checkbox" name = "delivery" value = "Express Versand">Express Versand<br/>
-    </div>
+  <div class="container">
+    <div id="header">
+    <h3 align="center">Bestehende Aufträge: {{ orders.length }}</h3>
   </div>
-</section>
+  </div>
+  <ion-card width-100 *ngFor="let order of orders" inset>
+    <ion-card-header text-wrap>
+      <strong>{{ order.Titel }}</strong>
+    </ion-card-header>
 
-<!--order function-->
-
-    <div class = "yellowgreen">
-    <button ion-button icon-end class = "submit-button" full type = "submit" color = "secondary">
-    verbindlich Bestellen<ion-icon name = "cart"></ion-icon></button>
-    </div>
-
-<!--button up-->
-
+    <ion-card-content>
+      <!-- detailed information -->
+      <p><strong>Status:</strong><ion-badge color="light">{{ statuses[order.StatusID].Status }}</ion-badge></p>
+      <p><strong>Preis:</strong><ion-badge color="light">{{ order.Preis }}</ion-badge></p>
+      <p><strong>AktionID:</strong><ion-badge color="light">{{ order.AktionID }}</ion-badge></p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
