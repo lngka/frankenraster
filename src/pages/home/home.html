@@ -13,27 +13,28 @@
 <!--info-paragraph-->
 
 <ion-content padding>
-  <div class = "container">
   <h3 align="center" class="header">Willkommen bei Frankenraster!</h3>
   <p class ="bold">
-    <br/>
     Dank unserer neuen Version für mobile Geräte, können Sie nun bequem von
-    ihrem Tablet aus unseren WebDienst benutzen.<br/><br/>
-
-    Mit Hilfe unserer Suchmaschine können Sie bequem unseren Lagerbestand
-    nach Ihrem gewünschten Artikel durchsuchen. <br/><br/>
-
-    Falls Sie Hilfe bei der Suche benötigen, klicken Sie auf das <b>"Hilfe"</b>
+    ihrem Tablet aus unseren WebDienst benutzen.
   </p>
-  <br/>
-
-<!--search function-->
-
-  <ion-item>
-    <ion-input placeholder="Suchbegriffe..." name="keywords" type="keywords"></ion-input>
-  </ion-item>
-    <div class="yellowgreen">
-    <button ion-button>Suchen</button>
-    </div>
-</div>
+  <p class ="bold">
+    Mit Hilfe unserer Suchmaschine können Sie bequem unseren Lagerbestand
+    nach Ihrem gewünschten Artikel durchsuchen.
+  </p>
+  <p class ="bold">
+    Falls Sie Hilfe bei der Suche benötigen, klicken Sie auf das <b>"Hilfe"</b><br>
+  </p>
+  <form (ngSubmit)="search()" autocomplete="off">
+    <ion-row>
+        <ion-list inset>
+          <ion-item>
+            <ion-input placeholder="z.B. Lieferanten" name="keyword" type="text" required [(ngModel)]="keyword"></ion-input>
+          </ion-item>
+        </ion-list>
+    </ion-row>
+    <ion-row>
+        <button [disabled]="formDisabled" ion-button class="submit-btn" full type="submit" >Search</button>
+    </ion-row>
+  </form>
 </ion-content>

@@ -14,8 +14,8 @@ import { LoginPage } from '../pages/login/login';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  // rootPage: any = TabsPage;
-  rootPage: any = LoginPage;
+  rootPage: any = TabsPage;
+  // rootPage: any = LoginPage;
   // rootPage: any = SearchresultPage;
 
 

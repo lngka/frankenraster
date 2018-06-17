@@ -1,45 +1,38 @@
 page-login {
 
-/*global*/
+  /*global*/
 
-.container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-}
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
 
-/*header*/
+  /*header*/
 
-ion-header {
-  border-bottom: 2px solid yellowgreen;
-}
+  ion-header {
+  }
 
-/*body*/
+  /*body*/
 
-ion-content {
-  font-family: sans-serif;
-  border-top: 2px solid yellowgreen;
-  border-left: 2px solid yellowgreen;
-  border-right: 2px solid yellowgreen;
-}
+  ion-content {
+    font-family: sans-serif;
+  }
 
-/*button*/
+  /*button*/
+  .yellowgreen {
+    button {
+      background-color: yellowgreen;
+    }
+  }
 
-.yellowgreen {
-  button {
+  /*footer*/
+  ion-footer {
     background-color: yellowgreen;
   }
-}
 
-/*footer*/
-
-ion-footer {
-  background-color: yellowgreen;
-}
-
-ion-footer p {
-  text-align: center;
-  color: #ffffff;
-}
-
+  ion-footer p {
+    text-align: center;
+    color: #ffffff;
+  }
 }
