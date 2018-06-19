@@ -49,8 +49,6 @@ export class AboutPage {
           .subscribe(
             (data) => {
               this.orders = JSON.parse(JSON.stringify(data));
-              console.log(JSON.stringify(data));
-              console.log(myURL);
             },
             error => {
               console.error(error);
