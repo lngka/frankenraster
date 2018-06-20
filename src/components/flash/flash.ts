@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FlashProvider } from '../../providers/flash/flash';
-import { trigger, state, style, animate, transition } from '@angular/animations';
+import { trigger, style, animate, transition } from '@angular/animations';
 
 @Component({
     selector: 'flash',

@@ -11,6 +11,7 @@ import { Storage } from '@ionic/storage';
 export class AboutPage {
   orders = [];
   statuses = [];
+  actions = [];
   loginID : Number;
   constructor(public navCtrl: NavController, private flash: FlashProvider, private http: HttpClient, private storage: Storage) {
 
@@ -35,6 +36,22 @@ export class AboutPage {
         console.error(e);
         return this.flash.show(e, 3000);
       });
+    this.storage.get("actions")
+        .then((d) => {
+          // the 1st element in actions must be set to support the logic in .html
+          var dummyAction  = {
+            AktionID: 0,
+            Preis: 0,
+            Aktion: "NULL Aktion"
+          };
+          var data = JSON.parse(d);
+          this.actions = data;
+          this.actions.unshift(dummyAction);
+        })
+        .catch((e) => {
+          console.error(e);
+          return this.flash.show(e, 3000);
+        });
   }
 
   // update orders everytime before page loads

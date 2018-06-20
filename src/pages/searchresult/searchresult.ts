@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { FlashProvider } from '../../providers/flash/flash';
 import { HttpClient } from '@angular/common/http';
 import { Storage } from '@ionic/storage';
@@ -11,7 +11,6 @@ import { Storage } from '@ionic/storage';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-searchresult',
   templateUrl: 'searchresult.html',
@@ -80,11 +79,16 @@ export class SearchresultPage {
     // remove item from shopping list if action == 0
     if (aktionID == 0) {
       item.AktionID = aktionID;
-      this.shoppingcart = this.shoppingcart.filter((ordered_item) => {
-        return ordered_item.AktionID != 0;
+      this.shoppingcart = this.shoppingcart.filter((cart_item) => {
+        return cart_item.AktionID != 0;
       });
     } else {
       item.AktionID = aktionID;
+
+      // remove previously saved data of this item
+      this.shoppingcart = this.shoppingcart.filter((cart_item) => {
+        return cart_item.OrdnerID != item.OrdnerID  ;
+      });
       this.shoppingcart.push(item);
     }
   }
@@ -106,7 +110,7 @@ export class SearchresultPage {
             }
           );
         });
-        
+
         var myURL = "https://frdb-lngka.c9users.io/order"
         this.http.post(myURL, q)
           .subscribe(
